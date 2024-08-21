@@ -1,26 +1,40 @@
 body {
     color: #ffffff;
-    background: black;
+    background-image: url(mogango.jpg);
     margin: 0px;
     font-family: "Teko", sans-serif;
     margin-bottom: 100px;
+    padding: 20px;
+    overflow: hidden;
 }
 
 header {
     border-bottom: solid 2px rgb(217, 101, 143, 1);
     padding: 20px;
     font-size: 40px;
-    color: rgb(217, 101, 143, 1);
+    color: rgb(119, 6, 6);
  }
  
- .chamada {
-    background: rgb(90, 39, 91, 1);
+p{
+    font-size: 20px;
+}
+
+.chamada {
+    background-image: linear-gradient(to right, rgb(170, 44, 61), rgb(230, 154, 154));
     padding-bottom: 80px;
-    padding-top: 80px;
+    padding-top: 40px;
     display: flex;
     justify-content: center;
 }
 
+.chamada-texto{
+    padding-top: 20px;
+}
+
+.Mainfilm{
+    border-radius: 30px;
+    size-adjust: 100%;
+}
 .chamada-texto {
     margin-right: 5%;
 }
@@ -29,33 +43,48 @@ h1 {
     font-size: 40px;
 }
 
+h2{
+    padding-top: 10px;
+}
+
 img {
     height: 200px;
+    border-radius: 30px;
 }
 
 .categoria-videos {
     display: flex;
+    justify-content: center;
     overflow-x: auto;
     gap: 30px;
-    
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 
 .categoria {
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 50px;
+    size-adjust: 90%;
 }
 
 .categoria-videos img {
     opacity: 0.5;
     height: 200px;
+    transition: 100ms linear;
 }
 
 .categoria-videos img:hover {
     opacity: 1;
     border: 1px solid pink;
+    scale: 1.1;
+    border-radius: 30px;
+    transition: 100ms linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .categoria h2 {
-    color: rgb(217, 101, 143, 1)
+    color: rgb(179, 18, 18);
 }
